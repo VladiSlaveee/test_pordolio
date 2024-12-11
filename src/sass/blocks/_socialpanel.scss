@@ -1,0 +1,37 @@
+.sidepanel {
+    position: fixed;
+    top: 225px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    z-index: 3;
+
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
+    }
+
+    &__line {
+        border: 1px solid #000;
+        height: 70px;
+    }
+
+    &__social {
+        display: flex;
+        gap: inherit;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
