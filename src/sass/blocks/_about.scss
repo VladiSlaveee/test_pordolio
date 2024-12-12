@@ -9,6 +9,18 @@
         gap: 0 70px;
     }
 
+
+    &__subtitle {
+        margin-top: 6px;
+    }
+
+    &__title {
+        position: relative;
+        padding-left: 12px;
+        margin-bottom: 0;
+        @include before_circle;
+    }
+
     &__resume {
         padding-top: 6px;
     }

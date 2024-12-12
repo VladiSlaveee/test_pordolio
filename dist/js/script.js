@@ -14,3 +14,10 @@ closeElem.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     menu.classList.remove('active')
 });
+
+const percents = document.querySelectorAll('.percent__grid-item-header__percent');
+lines = document.querySelectorAll('.percent__grid-item-body');
+
+percents.forEach((item, i) => {            //кажный элем на основе его индекса (аргумент)
+    lines[i].style.width = item.innerHTML;  //вытаскиваем стили из percent и кладём в lines по индексу
+});
