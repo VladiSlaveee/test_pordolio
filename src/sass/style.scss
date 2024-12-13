@@ -30,6 +30,7 @@ hr {
     height: 3px;
     margin: 0 auto;
     margin-top: 25px;
+    border: none;
 }
 
 @import 'blocks/promo';
@@ -41,3 +42,6 @@ hr {
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/percent';
+@import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';

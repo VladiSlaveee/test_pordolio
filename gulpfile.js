@@ -10,6 +10,9 @@ gulp.task("server", function () {
 	browserSync({
 		server: {
 			baseDir: "dist",
+			serveStaticOptions: {
+				extensions: ["html"]
+			}
 		},
 	});
 
