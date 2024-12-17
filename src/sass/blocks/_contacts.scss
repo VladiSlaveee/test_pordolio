@@ -5,12 +5,14 @@
         padding: 0 35px 0 52px;
         display: grid;
         grid-template-columns: 400px 585px;
-        justify-content: space-between;
+        column-gap: 70px;
     }
 
     &__photo {
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -54,8 +56,7 @@
         margin-top: 30px;
         display: grid;
         grid-template: 45px 190px 45px / repeat(2, 280px);
-        justify-content: space-between;
-        row-gap: 41px;
+        gap: 41px 25px;
 
         label {
             display: block;
