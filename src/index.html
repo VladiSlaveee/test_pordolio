@@ -101,7 +101,12 @@
     <section class="about">
         <div class="container">
             <div class="about__grid">
-                <img src="img/Photo_1.jpg" alt="photo" class="about__main_img">
+                <picture class="about__main_img">
+                    <source media="(max-width: 577px)" srcset="img/Photo_2.png">
+                    <source media="(min-width: 576px)" srcset="img/Photo_1.jpg"">
+                    <img src=" img/Photo_1.jpg" alt="photo">
+                </picture>
+                <!-- <img src="img/Photo_1.jpg" alt="photo" class="about__main_img"> -->
                 <div class="about__resume">
                     <h2 class="about__title title title_fz16">Про меня</h2>
                     <div class="about__subtitle title title_fz36">Меня зовут Владислав</div>
