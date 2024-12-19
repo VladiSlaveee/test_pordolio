@@ -319,6 +319,7 @@
         &__wrapper {
             margin-top: 40px;
             grid-template-columns: 1fr;
+            gap: 20px;
         }
 
         &__item {
@@ -343,6 +344,10 @@
             grid-template-columns: 1fr;
             column-gap: 75px;
             padding-left: 20px;
+        }
+
+        &__item-header-title_min {
+            width: 155px;
         }
     }
 

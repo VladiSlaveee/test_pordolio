@@ -73,9 +73,9 @@
                 </ul>
             </nav>
             <div class="menu__social">
-                <a href="#"><img src="../icons/social/github.svg" alt="github"></a>
-                <a href="#"><img src="../icons/social/instagram.svg" alt="insta"></a>
-                <a href="#"><img src="../icons/social/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="icons/social/github.svg" alt="github"></a>
+                <a href="#"><img src="icons/social/instagram.svg" alt="insta"></a>
+                <a href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
             </div>
         </div>
         <div class="menu__overlay"></div>
@@ -357,7 +357,12 @@
                 <a href="#" class="portfolio__item">
                     <img src="img/works/bread.jpg" alt="uber"></a>
                 <a href="#" class="portfolio__item">
-                    <img src="img/works/plans.jpg" alt="uber"></a>
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/works/plans_min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/works/plans.jpg">
+                        <img src="img/works/plans.jpg" alt="uber">
+                    </picture>
+                </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/ipad.jpg" alt="uber"></a>
                 <a href="#" class="portfolio__item">
@@ -403,7 +408,8 @@
                     </div>
                     <div class="price__item">
                         <div class="price__item-header">
-                            <div class="price__item-header-title">Android/IOS Приложение</div>
+                            <div class="price__item-header-title price__item-header-title_min">Android/IOS Приложение
+                            </div>
                             <div class="price__item-header-price">от 25000 руб..</div>
                         </div>
                         <p class="price__item-body">Приложение для смартфона любой ОС</p>
